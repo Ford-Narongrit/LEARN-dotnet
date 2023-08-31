@@ -1,5 +1,16 @@
 # My First .NET Framework 6.0 for backend API
 
+## Setup project
+
+1. create appsettings.Development.json
+
+  ```bash
+  cp appsettings.json appsettings.Development.json
+  ```
+
+2. get google Oauth2 and edit appsettings.Development.json
+3. run project
+
 ## Run project
 
 - normal run
