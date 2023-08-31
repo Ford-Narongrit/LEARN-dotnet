@@ -8,4 +8,6 @@ public class User
     public string? FirstName { get; set; }
     public string? LastName { get; set; }
     public string? Email { get; set; }
+    public ICollection<Post> Posts { get; } = new List<Post>();// Navigation property
+
 }

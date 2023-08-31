@@ -19,6 +19,16 @@ public class DataContext : DbContext
 
     }
 
+    // initial relationship
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<Post>()
+            .HasOne(b => b.User)
+            .WithMany(a => a.Posts)
+            .HasForeignKey(b => b.UserId);
+    }
+
     // Add a DbSet for each entity type that you want to include in your model.
     public DbSet<User> Users => Set<User>();
+    public DbSet<Post> Posts => Set<Post>();
 }
