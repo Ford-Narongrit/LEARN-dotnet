@@ -48,7 +48,7 @@ dotnet watch run
    dotnet run
    ```
 
-## Folder structure
+## Folder structure [Reference](https://github.com/codemobiles/dotnet6_intro_workshop/tree/main)
 
 - Controller
   - APi
